@@ -5,6 +5,8 @@
 At the project folder of host:
 
     vagrant up
+At some location of host:
+
     chmod 700 insecure_private_key 
     ssh vagrant@127.0.0.1 -p 2222 -i insecure_private_key
     
@@ -20,5 +22,7 @@ Within the VM:
 
 ## Backups
     gradle clean
+	vagrant suspend
+	vagrant halt
     vagrant destroy
 	vagrant reload
